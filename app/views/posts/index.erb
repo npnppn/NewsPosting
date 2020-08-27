@@ -1,0 +1,14 @@
+<h1>반갑습니다! made by 형민</h1>
+<% @posts.each do |post| %>
+
+<%= current_user.email%>
+
+<div class="well">
+	<h3><%= post.title %></h3>
+	<p><%= post.body %></p>
+	<%= link_to "포스트 읽기", post_path(post), :class => 'btn btn-default' %>
+	</div>
+
+
+
+<% end %>

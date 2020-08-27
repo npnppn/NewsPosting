@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>형민이의 NewsPostingSite</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+<%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	  
+	   <nav class="navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">형민이의 NewsPostingSite</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "메인화면", home_path %></li>
+          </ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "로그아웃", destroy_user_session_path, :method => :delete %></li>
+          </ul>
+			
+			 <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "포스트쓰기(로그인 필요)", new_post_path %></li>
+          </ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "회원가입", destroy_user_session_path, :method => :delete %></li>
+          </ul>
+			
+			
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	  
+	<div class="container">
+		<%= yield %>
+	  </div>  
+    
+  </body>
+</html>
