@@ -1,24 +1,48 @@
-# README
+# Dongguk NEWS Portal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 1. 어떤 사이트?
+- 게시물을 등록하고 읽어보면서 댓글도 달 수 있는 뉴스 포스팅 사이트(ruby on rails 활용)
 
-Things you may want to cover:
 
-* Ruby version
+# 2. 구현 기능
+ 1) 회원가입, 로그인, 로그아웃 창 만들기
+ 2) 게시물 등록/편집/삭제 (로그인한 사용자만)
+ 3) 이때, 게시물은 제목, 본문, 이미지 첨부하는 공간으로 구성
+ 4) 모두가 볼 수 있도록 게시물들을 메인화면에 리스트로 보여주기
+ 5) 각 포스팅 글에 댓글 추가하고 삭제하는 기능
 
-* System dependencies
 
-* Configuration
+# 3. 이용 방법
+ 1) 처음 사이트에 접속하면 로그인&회원가입 창이 나옵니다. 기존에 계정이 있으시면 그 계정으로 접속하시면 되고, 계정이 없다면 아래에 sign up 버튼을 눌러주시면 회원가입이 진행됩니다.
+![image](https://user-images.githubusercontent.com/61404972/91409940-21941700-e881-11ea-95ae-b46865032648.png)
+ 
+2) 회원가입 화면입니다. 사이트에서 사용할 이메일주소(ID)와 비밀번호를 설정하시면 됩니다. 이때, 비밀번호는 최소 문자 6개 이상으로 설정해주셔야 합니다.
+![image](https://user-images.githubusercontent.com/61404972/91409956-25279e00-e881-11ea-9055-ca9ab84c79bc.png)
 
-* Database creation
 
-* Database initialization
+ 3) 회원가입을 완료하면 사이트의 메인화면으로 이동합니다. 오른쪽 상단에는 회원가입, 포스트 쓰기, 로그아웃 버튼이 있으며, 왼쪽에 메인화면 버튼을 누르시면 언제든 홈으로 돌아오게 됩니다.
+![image](https://user-images.githubusercontent.com/61404972/91409967-28228e80-e881-11ea-844b-c1bbb721b94c.png)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+ 4) 이제 본격적으로 게시물을 작성해보겠습니다. 오른쪽 위에 포스트 쓰기 버튼을 누르시면 글을 적을 수 있는 폼이 나타납니다. 게시물은 우선 제목과 내용을 작성해주시면 되고, 이미지 또한 첨부할 수 있습니다.
+![image](https://user-images.githubusercontent.com/61404972/91409976-2b1d7f00-e881-11ea-9240-062443daa179.png)
 
-* Deployment instructions
 
-* ...
+ 5) 아래 예시처럼 내용을 모두 작성하였으면 Save Post 버튼을 누르시면 됩니다.
+![image](https://user-images.githubusercontent.com/61404972/91409985-2eb10600-e881-11ea-8b86-8c788a65594f.png)
+
+
+ 6) 성공적으로 이미지가 포함된 게시물이 올라갔음을 확인할 수 있습니다.
+![image](https://user-images.githubusercontent.com/61404972/91409997-31abf680-e881-11ea-91b3-700fed10a1dc.png)
+
+
+ 7) 게시물에 댓글을 작성할 수 있는 공간도 있습니다. 댓글을 지우고 싶을 땐 이름 밑에 있는 [Delete]을 누르면 댓글이 삭제됩니다.
+![image](https://user-images.githubusercontent.com/61404972/91410002-34a6e700-e881-11ea-8d59-250890e45f58.png)
+
+
+ 8) 다시 메인화면으로 돌아오면 게시물이 성공적으로 올라온 것을 알 수 있습니다. 저의 사이트에서 마음껏 게시물을 올리고 댓글을 작성해보세요!
+![image](https://user-images.githubusercontent.com/61404972/91410015-383a6e00-e881-11ea-8520-2f7cf0d05e77.png)
+
+
+# 4. 추가 기능 설명
+ - 디자인을 고려하여 깔끔하게 구성 요소들을 배치 (stylesheet와 Javascript 활용)
